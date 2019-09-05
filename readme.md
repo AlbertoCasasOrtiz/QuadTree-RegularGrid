@@ -1,7 +1,7 @@
 PyQuadTree + RegularNet
 -----------------------
 
-This repository is an implementation of a guadtree and a regulargrid for creating maps in robotics.
+This repository is an implementation of a quadtree and a regulargrid for creating maps in robotics.
 
 You can set your own map like the one below, and then you can obtain a quadtree or a regulargrid which represents the points availables for the robot to operate.
 
