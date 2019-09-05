@@ -5,7 +5,7 @@ from square.Square import Point
 from square.Square import Square
 
 
-class RegularNet:
+class RegularGrid:
 
     def __init__(self):
         self.nodes = []
@@ -18,7 +18,7 @@ class RegularNet:
                 num += 1
         return num
 
-    def create_regular_net(self, img, horizontal_tiles, show_marked):
+    def create_regular_grid(self, img, horizontal_tiles, show_marked):
         height_image = img.shape[0]
         width_image = img.shape[1]
         current_x = 0
@@ -55,7 +55,7 @@ class RegularNet:
                         self.adjacency[i].append(j)
 
     def print_adjacents(self):
-        file = open("out/regularnet-adjacents.txt", "w")
+        file = open("out/regulargrid-adjacents.txt", "w")
 
         for i in self.adjacency:
             for j in i:
@@ -65,7 +65,7 @@ class RegularNet:
         file.close()
 
     def print_nodes(self):
-        file = open("out/regularnet-nodes.txt", "w")
+        file = open("out/regulargrid-nodes.txt", "w")
 
         file.write(str(self.nodes[0].square.side) + "\n")
 
